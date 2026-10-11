@@ -4,7 +4,15 @@
 
 ![MIT](https://img.shields.io/badge/license-MIT-green) ![Pages](https://img.shields.io/badge/site-Pages_ready-blue) ![Docker](https://img.shields.io/badge/docker-reproducible-blue) ![Python](https://img.shields.io/badge/python-3.11-blue) ![Status](https://img.shields.io/badge/verified-Oct_11_2026-brightgreen)
 
-**🌐 Live interactive version:** open [`preview.html`](preview.html) locally, or publish it free (instructions below) at `https://YOUR-USER.github.io/YOUR-REPO/preview.html` — quiz, charts, and beginner path included.
+**🌐 Live interactive version:** open [`preview.html`](preview.html) locally, or click the published site (same page, mirrored so it works under either Pages setting):
+
+| Entry | Live link | Local file |
+|---|---|---|
+| `/` (landing + auto-redirect) | [m0-ar.github.io/national-medals-2026/](https://m0-ar.github.io/national-medals-2026/) | [`index.html`](index.html) |
+| `/preview.html` | [m0-ar.github.io/national-medals-2026/preview.html](https://m0-ar.github.io/national-medals-2026/preview.html) | [`preview.html`](preview.html) |
+| `/docs/preview.html` | [m0-ar.github.io/national-medals-2026/docs/preview.html](https://m0-ar.github.io/national-medals-2026/docs/preview.html) | [`docs/preview.html`](docs/preview.html) |
+
+Quiz, charts, and beginner path included on every mirror.
 
 [Story](#-the-story-in-plain-language) · [Recipients](#-the-six-recipients--exact-federal-citations) · [Verified](#-what-checks-out--and-what-does-not-yet) · [Markets](#-markets-how-big-is-this-in-dollars) · [Beginner guide](#-beginner-guide--read-this-and-you-are-a-professional) · [Quick start](#-quick-start--run-everything-in-2-minutes) · [Quiz](#-interactive-quiz--from-scratch-to-pro) · [Website](#-view-this-repo-as-a-website-github-pages) · [FAQ](#-faq-simple-answers)
 
@@ -19,8 +27,8 @@
 ![Hero — interactive site](docs/images/preview-hero.png)
 *The interactive site (`preview.html`): story, citations, market chart, verification table, and quiz. Click through to [the quiz](#-interactive-quiz--from-scratch-to-pro).*
 
-[![▶ Watch the walkthrough — 2-minute tour](docs/images/preview-hero.png)](preview.html)
-*Video pattern: GitHub READMEs show a thumbnail that links out. Click the image above to open the interactive tour (`preview.html`). To add a recorded MP4 later, upload it to a release and link the thumbnail to it — see `docs/DEMO.md`. No fake video is bundled.*
+[![▶ Walkthrough — 2-minute interactive tour](docs/images/preview-hero.png)](https://m0-ar.github.io/national-medals-2026/preview.html)
+*Video pattern: GitHub READMEs show a thumbnail that links out. Click the image above to open the live interactive tour (mirrors: [`/` link](https://m0-ar.github.io/national-medals-2026/), [`/preview.html`](https://m0-ar.github.io/national-medals-2026/preview.html), [`/docs/preview.html`](https://m0-ar.github.io/national-medals-2026/docs/preview.html); local: [`preview.html`](preview.html)). To add a recorded MP4 later, upload it to a release and link the thumbnail to it — see `docs/DEMO.md`. No fake video is bundled.*
 
 ## Table of contents
 
@@ -165,7 +173,7 @@ Outputs land in `benchmarks/`. Live market re-fetch is attempted on every run; i
 
 ## 🧠 Interactive quiz — from scratch to pro
 
-Open [`preview.html`](preview.html) → **Quiz**. Three levels × five questions, instant explanations, progress saved in your browser. No account, no server.
+Open the live site ([` /`](https://m0-ar.github.io/national-medals-2026/) · [`/preview.html`](https://m0-ar.github.io/national-medals-2026/preview.html) · [`/docs/preview.html`](https://m0-ar.github.io/national-medals-2026/docs/preview.html)) → **Quiz**. Three levels × five questions, instant explanations, progress saved in your browser. No account, no server. Local fallback: [`preview.html`](preview.html).
 
 - **Level 1 · Starter:** how many medals, who got what, splashdown time, combined value, official spellings.
 - **Level 2 · Builder:** PageRank, CUDA strategy, Su arc, Genesis goal, NVIDIA income jump.
@@ -173,18 +181,37 @@ Open [`preview.html`](preview.html) → **Quiz**. Three levels × five questions
 
 ## 🌐 View this repo as a website (GitHub Pages)
 
-`preview.html` is a complete static site (no build step). To publish free:
+`preview.html` is a complete static site (no build step). It is mirrored at repo root **and** under `docs/`, with `index.html` redirects and `.nojekyll` in both folders — so the site resolves whether Pages serves from `/` (root) or `/docs`:
+
+- Source `/` (root) → `/` (via `index.html`), `/preview.html`, `/docs/preview.html` all return 200.
+- Source `/docs` → `/` (via `docs/index.html`), `/preview.html` (mirror) return 200.
+
+Recommended setting is **`/docs`** (keeps the site next to the screenshots), but either works. To publish free:
 
 ```
-1. Push this repo to GitHub.
+1. Push this repo to GitHub (already at M0-AR/national-medals-2026, branch main).
 2. Open Settings → Pages.
 3. Under "Build and deployment", choose: Deploy from a branch.
-4. Branch: main (or master) · Folder: / (root).
-5. Save. Open https://YOUR-USER.github.io/YOUR-REPO/preview.html
-   (first deploy takes ~1–2 minutes).
+4. Branch: main · Folder: /docs (recommended; / also works via mirrors).
+5. Save. Wait 1–2 min for the "pages build and deployment" Action, then open:
+   https://m0-ar.github.io/national-medals-2026/  (landing, redirects to quiz site)
+   https://m0-ar.github.io/national-medals-2026/preview.html
+   https://m0-ar.github.io/national-medals-2026/docs/preview.html
 ```
 
-Then set the repo's **About → Website** field to that URL, and tick **Use your GitHub Pages website**. Visitors who click the link see the repo displayed as the web — charts, tables, and quiz all working.
+Then set the repo's **About → Website** field to `https://m0-ar.github.io/national-medals-2026/` and tick **Use your GitHub Pages website**. Visitors who click the link see the repo displayed as the web — charts, tables, and quiz all working.
+
+Diagnose any 404 in 10 seconds:
+
+```bash
+BASE="https://m0-ar.github.io/national-medals-2026"
+for p in "" "preview.html" "docs/preview.html"; do
+  printf "%s -> " "/$p"
+  curl -s -o /dev/null -w "%{http_code}\n" "$BASE/$p"
+done
+```
+
+Expect `200 / 200 / 200` with the mirrors above.
 
 ## 🔎 How we reasoned — step by step
 
@@ -202,7 +229,11 @@ That is the whole method. Every section above is the output of one of those step
 ## 🗂 Project layout
 
 ```
-preview.html              ← interactive site (publish via Pages)
+index.html                ← landing: redirects to preview.html (+ fallback links)
+preview.html              ← interactive site mirror (root source)
+docs/preview.html         ← interactive site canonical (docs source; byte-identical)
+docs/index.html           ← landing mirror for docs source
+.nojekyll + docs/.nojekyll ← keep Pages fully static
 docs/images/              ← screenshots (hero, market) — real captures from this repo
 docs/DEMO.md              ← how to record/replace the demo video honestly
 data/live_quotes_2026-10-11.json  ← market snapshot + fundamentals

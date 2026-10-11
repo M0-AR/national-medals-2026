@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>National Medals 2026 — Verification, Markets & Learning Lab</title>
+<meta name="description" content="What happened on Oct 8 2026, what was verified, what the markets say, and an interactive path from scratch to pro.">
+<style>
+:root{--bg:#0b1020;--card:#141b33;--ink:#eef2ff;--mut:#9aa6c7;--acc:#6ee7ff;--acc2:#a78bfa;--ok:#34d399;--warn:#fbbf24;--bad:#f87171;--line:#263056}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(1200px 600px at 20% -10%,#1b2450 0%,var(--bg) 55%),var(--bg);color:var(--ink)}
+a{color:var(--acc)}header.hero{max-width:1100px;margin:0 auto;padding:56px 24px 24px;text-align:center}
+.badge{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:6px 12px;margin:4px;font-size:12px;color:var(--mut);background:#0e1530}
+h1{font-size:clamp(28px,5vw,52px);line-height:1.05;margin:18px 0 10px}
+.sub{color:var(--mut);max-width:820px;margin:0 auto;font-size:17px}
+.cta{margin:22px 0}.btn{display:inline-block;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#061022;font-weight:800;border-radius:12px;padding:12px 20px;margin:6px;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+nav.toc{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+main{max-width:1100px;margin:0 auto;padding:24px}
+section.card{background:linear-gradient(180deg,rgba(255,255,255,.03),transparent),var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;margin:18px 0}
+h2{margin-top:0;font-size:26px}h3{color:var(--acc)}
+.grid{display:grid;gap:14px}.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.person{background:#0e1530;border:1px solid var(--line);border-radius:14px;padding:16px}
+.person b{font-size:17px}.tag{font-size:11px;border-radius:999px;padding:3px 9px;background:#1e2a55;color:var(--acc);border:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top}
+th{color:var(--mut);font-weight:600}tr:hover td{background:rgba(110,231,255,.04)}
+.ok{color:var(--ok);font-weight:700}.warn{color:var(--warn);font-weight:700}
+canvas#mcap{width:100%;height:300px;background:#0e1530;border:1px solid var(--line);border-radius:12px}
+.quiz-q{background:#0e1530;border:1px solid var(--line);border-radius:12px;padding:14px;margin:10px 0}
+.quiz-q button{display:block;width:100%;text-align:left;margin:6px 0;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:#131b3a;color:var(--ink);cursor:pointer}
+.quiz-q button:hover{border-color:var(--acc)}
+.quiz-q button.right{border-color:var(--ok);background:rgba(52,211,153,.12)}
+.quiz-q button.wrong{border-color:var(--bad);background:rgba(248,113,113,.12)}
+.expl{font-size:13px;color:var(--mut);margin-top:8px}
+.levels{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.levels button{border-radius:999px;border:1px solid var(--line);background:#0e1530;color:var(--ink);padding:8px 14px;cursor:pointer}
+.levels button.active{background:var(--acc);color:#061022;font-weight:800}
+.progress{height:10px;background:#0e1530;border:1px solid var(--line);border-radius:999px;overflow:hidden;margin:10px 0}
+.progress>div{height:100%;background:linear-gradient(90deg,var(--acc),var(--acc2));width:0%}
+code,pre{background:#0a0f26;border:1px solid var(--line);border-radius:8px}pre{padding:14px;overflow:auto}code{padding:2px 6px}
+footer{max-width:1100px;margin:0 auto;padding:24px;color:var(--mut);font-size:13px;text-align:center}
+details{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:8px 0;background:#0e1530}
+summary{cursor:pointer;font-weight:700}
+.kbd{font-family:ui-monospace,monospace}
+@media(max-width:640px){table{font-size:12px}}
+</style>
+</head>
+<body>
+<header class="hero">
+<div><span class="badge">MIT-licensed code</span><span class="badge">Reproducible</span><span class="badge">Oct 8 2026 ceremony</span><span class="badge">Live market check Oct 11 2026</span><span class="badge">GitHub Pages ready</span></div>
+<h1>National Medals 2026: what happened, what checks out, what it is worth</h1>
+<p class="sub"><b>30-second summary for decision-makers:</b> On Oct 8 2026, six technology leaders received the nation's highest science and technology honors. This project verifies every major claim against public releases and live market data, corrects transcript name errors, values the six companies at ~$16.69T combined, and teaches the full story from zero to professional — with code you can re-run in one command.</p>
+<div class="cta">
+<a class="btn" href="#quiz">Start the interactive quiz</a>
+<a class="btn ghost" href="#quickstart">Run it yourself in 2 minutes</a>
+<a class="btn ghost" href="#market">See the market proof</a>
+</div>
+</header>
+<nav class="toc">
+<a href="#story">Story</a> · <a href="#recipients">Recipients</a> · <a href="#verified">Verified</a> · <a href="#market">Markets</a> · <a href="#patterns">Hidden patterns</a> · <a href="#beginner">Beginner guide</a> · <a href="#quickstart">Quick start</a> · <a href="#quiz">Quiz</a> · <a href="#pages">Pages</a> · <a href="#faq">FAQ</a>
+</nav>
+<main>
+<section class="card" id="story">
+<h2>📖 The story in plain language</h2>
+<p>A ceremony honored six builders of the modern computing stack. Four received the <b>National Medal of Science</b> (new ideas that changed what computers can do). Two received the <b>National Medal of Technology and Innovation</b> (getting those ideas into everyone's hands at scale). The same day, a NASA crew returned from space, and the government described research, quantum, nuclear and moon/Mars plans. This site separates <b>confirmed facts</b> from <b>stories that still need proof</b>, using only public records you can open yourself.</p>
+<div class="grid g3">
+<div class="person"><b>🚀 New primitives</b><br><span class="mut">Musk · Brin · Huang · Su — rockets, search, GPUs, chips. Without them, today's AI does not exist.</span></div>
+<div class="person"><b>🌍 Scale + deploy</b><br><span class="mut">Dell · Nadella — personal computers and cloud that put those primitives everywhere.</span></div>
+<div class="person"><b>🔬 Policy backdrop</b><br><span class="mut">Accord (Sept) → Summit + medals (Oct 8) → 297 Genesis research projects.</span></div>
+</div>
+</section>
+<section class="card" id="recipients">
+<h2>🏅 The six recipients — exact federal citations</h2>
+<div class="grid g3">
+<div class="person"><span class="tag">Science</span><br><b>Elon Musk — SpaceX</b><p>Engineering at extraordinary ambition and scale: space, intelligent systems, communications, manufacturing.</p></div>
+<div class="person"><span class="tag">Science</span><br><b>Sergey Brin — Alphabet</b><p>Foundational algorithms for finding and processing information; how the world accesses knowledge.</p></div>
+<div class="person"><span class="tag">Science</span><br><b>Jensen Huang — NVIDIA</b><p>GPU into general-purpose computing: parallel computation for science and super-intelligence.</p></div>
+<div class="person"><span class="tag">Science</span><br><b>Lisa Su — AMD</b><p>Semiconductor leadership: processor architecture + chiplet integration to exascale.</p></div>
+<div class="person"><span class="tag">Technology</span><br><b>Michael Dell — Dell</b><p>Personal + enterprise computing at scale; building a worldwide company; next-generation support.</p></div>
+<div class="person"><span class="tag">Technology</span><br><b>Satya Nadella — Microsoft</b><p>Cloud-era renewal; hyperscale infrastructure for training and deploying AI worldwide.</p></div>
+</div>
+<p class="expl">Spelling matters: Huang (not Wang), Su (not Sue), Satya (not Sata), Kratsios (not Katzios), Artemis (not Aremis), Neuralink (not Neurolink), Nikola (not Nicola). The transcript's errors are themselves a lesson in speech-to-text fragility.</p>
+</section>
+<section class="card" id="verified">
+<h2>✅ What checks out — and what does not (yet)</h2>
+<table>
+<tr><th>Claim</th><th>Verdict</th><th>Why you can trust it / what is missing</th></tr>
+<tr><td>6 recipients, 4 Science + 2 Technology</td><td class="ok">CONFIRMED</td><td>Official release + NBC, AlJazeera, CNBC, Space.com, Forbes, C-SPAN agree.</td></tr>
+<tr><td>Crew-12 returned hours before</td><td class="ok">CONFIRMED</td><td>NASA: splashdown Oct 8 11:34 EDT, Pacific off LA, 237 days; crew Meir / Hathaway / Adenot / Fedyaev.</td></tr>
+<tr><td>John G. Trump tribute (1983 medal, radar, MIT)</td><td class="ok">CONFIRMED core</td><td>MIT professor, Radiation Lab British branch, D-Day radar, 1983 medal for ionizing radiation; Bronx 1907, MIT 1931.</td></tr>
+<tr><td>Genesis Mission: double US R&amp;D productivity</td><td class="ok">CONFIRMED</td><td>Energy Dept. pages; 297-project cohort; 12 Phase-II + 6 Phase-I new awards.</td></tr>
+<tr><td>Quantum by 2028 + 4 small reactors in 2026</td><td class="warn">REPORTED</td><td>Secondary summaries agree; primary executive-order text still needed for full proof.</td></tr>
+<tr><td>PageRank · CUDA · Zen/chiplet arcs</td><td class="ok">CONFIRMED in essence</td><td>WWW7 1998; CUDA install-base strategy + DGX-1 to OpenAI 2016; Zen + chiplet + exascale directionally confirmed.</td></tr>
+<tr><td>Hurricane rescue · $6.25B gift · age-19 biography details</td><td class="warn">NOT YET PROVEN</td><td>Quoted at ceremony but no independent filing or agency record found in this pass — do not cite as fact.</td></tr>
+</table>
+</section>
+<section class="card" id="market">
+<h2>📈 Markets: how big is this, in dollars?</h2>
+<p>Snapshot Oct 11 2026 (public quotes, re-fetched live and matched): <b>NVDA $5.54T · GOOGL $4.30T · MSFT $3.97T · TSLA $1.51T · AMD $0.99T · DELL $0.37T = ~$16.69T combined.</b> Top three (NVDA+MSFT+GOOGL) are ~83% — the stack is infrastructure-heavy. NVIDIA net income $120.1B (2026) vs $4.4B (2023): the economics behind the "backbone" language. High multiples for TSLA/AMD price future growth, not current earnings.</p>
+<canvas id="mcap" width="1000" height="300" aria-label="Market cap bar chart"></canvas>
+<table>
+<tr><th>Company</th><th>Price</th><th>Cap</th><th>P/E</th><th>What it means</th></tr>
+<tr><td>NVDA</td><td>$229.28</td><td>$5.54T</td><td>29.0</td><td>Parallel-compute leader; earnings caught up with story.</td></tr>
+<tr><td>GOOGL</td><td>$351.66</td><td>$4.30T</td><td>17.6</td><td>Search + cloud at reasonable multiple.</td></tr>
+<tr><td>MSFT</td><td>$535.07</td><td>$3.97T</td><td>29.1</td><td>Cloud + deployment scale.</td></tr>
+<tr><td>TSLA</td><td>$382.70</td><td>$1.51T</td><td>354.4</td><td>Market prices autonomy/robotics future.</td></tr>
+<tr><td>AMD</td><td>$608.10</td><td>$0.99T</td><td>155.1</td><td>Turnaround priced; trough point still needs archival proof.</td></tr>
+<tr><td>DELL</td><td>$586.06</td><td>$0.37T</td><td>34.1</td><td>Enterprise hardware + services.</td></tr>
+</table>
+</section>
+<section class="card" id="patterns">
+<h2>🔍 Hidden patterns (hypotheses with a test each)</h2>
+<details open><summary>H1 — Infrastructure concentration</summary>The top 3 are 83% of value. Test: Herfindahl index + event study around Oct 8.</details>
+<details><summary>H2 — Copper → chiplet → exascale (30 years)</summary>Materials (Cu wiring) → architecture (Zen/chiplet) → system (exascale) → training. Test: patent-citation chain + lab machine hours.</details>
+<details><summary>H3 — Policy + industry move together</summary>Accord (Sept) → medals (Oct 8) → 297 awards. Test: timeline vs company filing language.</details>
+<details><summary>H4 — Transcripts are fragile</summary>~15% proper-noun error without a name list. Test: re-transcribe audio with/without gazetteer.</details>
+<details><summary>H5 — Primitives vs scalers</summary>Science = new primitives; Technology = deploy everywhere. Test: patent + paper citation networks.</details>
+<details><summary>H6 — The turnaround outlier</summary>AMD's climb is unusually large. Test: synthetic-control vs peers; needs archival trough proof.</details>
+</section>
+<section class="card" id="beginner">
+<h2>🌱 Beginner guide — read this and you are a professional</h2>
+<p><b>You will know more than most interview candidates.</b> Follow these five steps. Each takes ~3 minutes.</p>
+<p><b>Step 1 — Say it in one breath:</b> "Six builders got the top US honors: four for inventing new computing primitives, two for deploying them planet-wide."</p>
+<p><b>Step 2 — Name the split:</b> Science = Musk (rockets/comms), Brin (search), Huang (GPUs), Su (chips). Technology = Dell (PCs), Nadella (cloud).</p>
+<p><b>Step 3 — Anchor two dates:</b> Crew-12 splashdown Oct 8 11:34 EDT; medals Oct 8 evening. Same-day space + policy moment.</p>
+<p><b>Step 4 — Quote one number:</b> ~$16.69T combined; top-3 = 83%. Say what it proves (infrastructure weight) and what it does not (not causation).</p>
+<p><b>Step 5 — Flag one uncertainty:</b> "Three anecdotes are unverified — hurricane rescue, gift size, early-biography details. I do not cite them as fact." That sentence is what makes you a professional.</p>
+<p>Then take the quiz below. Score 12+/15 and you can brief anyone with confidence.</p>
+</section>
+<section class="card" id="quickstart">
+<h2>🚀 Quick start — run everything in 2 minutes</h2>
+<pre># Option A: Docker (recommended)
+docker compose up research   # verifies claims + markets + patterns
+docker compose up lab        # notebooks on :8888
+docker compose up docs       # file server on :8000
+
+# Option B: no Docker
+bash scripts/run_all.sh
+python3 src/verify_claims.py
+python3 src/market_benchmark.py
+python3 src/hidden_patterns.py</pre>
+<p><b>Who this repo is for (user stories):</b> 🎓 students (learn the stack end-to-end) · 📰 journalists (check a claim before publishing) · 📊 investors (size the SI stack, read multiples honestly) · 🔬 researchers (extend H1–H6 to a thesis) · 🧑‍🏫 educators (teach verification + markets in one class) · 🏛️ policy readers (separate confirmed vs reported).</p>
+<p><b>Features:</b> exact citations · verification matrix (confirmed/reported/unverified) · live market snapshot + re-fetch script · falsifiable patterns · one-command Docker reproduce · this interactive page + quiz · print-ready paper draft in <span class="kbd">paper/</span>.</p>
+</section>
+<section class="card" id="quiz">
+<h2>🧠 Interactive quiz — from scratch to pro</h2>
+<p>Three levels, five questions each. Answers give instant explanations. Progress saves in your browser. No account, no server.</p>
+<div class="levels">
+<button data-level="starter" class="active">Level 1 · Starter</button>
+<button data-level="builder">Level 2 · Builder</button>
+<button data-level="pro">Level 3 · Pro</button>
+<button id="reset">Reset progress</button>
+</div>
+<div class="progress"><div id="bar"></div></div>
+<div id="score">Score: 0 / 15 · Level: Starter</div>
+<div id="questions"></div>
+</section>
+<section class="card" id="pages">
+<h2>🌐 View this repo as a website (GitHub Pages)</h2>
+<p>This file (<span class="kbd">preview.html</span>) is a complete static site. To publish it:</p>
+<pre>1. Push this repo to GitHub.
+2. Open Settings → Pages.
+3. Under "Build and deployment", choose: Deploy from a branch.
+4. Branch: main (or master) · Folder: / (root).
+5. Save. Open https://YOUR-USER.github.io/YOUR-REPO/preview.html
+   (first deploy takes ~1–2 minutes).</pre>
+<p>Tip: set the repo's About → Website field to that URL so visitors land on the interactive version. The README links here; this page links back to the README — visitors can choose reading or doing.</p>
+</section>
+<section class="card" id="faq">
+<h2>❓ FAQ (simple answers)</h2>
+<details><summary>Do I need to install anything to learn?</summary>No. Read this page top-to-bottom and take the quiz. Install only if you want to re-run the numbers.</details>
+<details><summary>Is the transcript reliable?</summary>For the six names and citations, yes — they match the official release. For proper-noun spelling and three anecdotes, no — this project lists exactly what is unproven.</details>
+<details><summary>Does $16.69T prove the medals were deserved?</summary>No. It proves economic scale and investor expectations. The technical case comes from citations, machines (exascale), missions (Crew-12) and research programs (Genesis).</details>
+<details><summary>Can I use this in class or at work?</summary>Yes — code is MIT, prose is CC-BY-4.0. Cite the release dates and snapshot date (Oct 11 2026) so others can check you.</details>
+<details><summary>What is the fastest interview-ready takeaway?</summary>"Four primitives, two scalers, one spaceflight, one research program, ~$17T of market value — with three anecdotes still unverified." Say that, then show the table.</details>
+</section>
+</main>
+<footer>Built from public records only · Snapshot Oct 11 2026 · Code MIT · Prose CC-BY-4.0 · Open an issue to correct anything — corrections are the feature.</footer>
+<script>
+const MCAP=[["NVDA",5.54],["GOOGL",4.30],["MSFT",3.97],["TSLA",1.51],["AMD",0.99],["DELL",0.37]];
+(function(){const c=document.getElementById('mcap');const x=c.getContext('2d');const W=c.width,H=c.height;x.clearRect(0,0,W,H);const max=6;const bw=W/MCAP.length;x.font='13px system-ui';MCAP.forEach((d,i)=>{const h=(d[1]/max)*(H-60);const px=i*bw+18,py=H-30-h;const g=x.createLinearGradient(0,py,0,py+h);g.addColorStop(0,'#6ee7ff');g.addColorStop(1,'#a78bfa');x.fillStyle=g;x.beginPath();x.roundRect(px,py,bw-36,h,8);x.fill();x.fillStyle='#eef2ff';x.fillText(d[0],px+8,py-8);x.fillStyle='#9aa6c7';x.fillText('$'+d[1].toFixed(2)+'T',px+8,H-10);});})();
+const BANK={
+starter:[
+{q:"How many National Medals of Science were presented at this ceremony?",o:["Two","Four","Six","Eight"],a:1,e:"Four: Musk, Brin, Huang, Su. Dell + Nadella received the Technology medal."},
+{q:"Which pair received the Technology and Innovation medal?",o:["Musk + Brin","Huang + Su","Dell + Nadella","Brin + Huang"],a:2,e:"Dell (PCs at scale) + Nadella (cloud/hyperscale)."},
+{q:"What time did Crew-12 splash down on Oct 8?",o:["11:34 a.m. EDT","Midnight UTC","6 p.m. EDT","Noon Pacific"],a:0,e:"NASA blog + NPR: 11:34 a.m. EDT, Pacific off Los Angeles, 237 days."},
+{q:"What is the combined market value in this snapshot?",o:["~$1.7T","~$6.7T","~$16.7T","~$60T"],a:2,e:"Sum of six caps = $16.687T. Top-3 are ~83%."},
+{q:"Which spelling is official?",o:["Jensen Wang","Lisa Sue","Satya Nadella","Michael Katzios"],a:2,e:"Huang, Su, Satya Nadella, Kratsios. Others are transcript errors."}],
+builder:[
+{q:"PageRank is associated with…",o:["Brin + Page, WWW7 1998","Huang + Su, 2017","Dell + Nadella, 2014","Musk + Tesla, 2008"],a:0,e:"Foundational retrieval/database algorithms — the Brin citation."},
+{q:"CUDA's winning strategy was…",o:["Keep it off consumer cards","Put it on GeForce for install base","Skip universities","Avoid libraries"],a:1,e:"GeForce carried CUDA everywhere; universities + libraries followed; DGX-1 to OpenAI 2016."},
+{q:"The Su arc in one line:",o:["Search → ads","Copper → Zen/chiplet → exascale","PCs → phones","Rockets → cars"],a:1,e:"Materials to architecture to system — the 30-year pattern H2."},
+{q:"Genesis Mission's stated goal:",o:["Double US R&D productivity","Ban benchmarks","Replace universities","End spaceflight"],a:0,e:"Pair scientists with intelligent systems; 297-project cohort."},
+{q:"NVIDIA net income 2023 → 2026:",o:["Flat","$4.4B → $120.1B","$120B → $4B","Negative"],a:1,e:"10-K fundamentals: the economics behind 'backbone' language."}],
+pro:[
+{q:"Why split Science vs Technology medals?",o:["Random","Primitives vs deployment at scale","Age order","Alphabetical"],a:1,e:"H5: Science = new primitives; Technology = hyperscale deployment. Test via patent networks."},
+{q:"Strongest professional caveat?",o:["None needed","Three anecdotes unverified","Markets prove merit","Spelling never matters"],a:1,e:"Hurricane rescue, gift size, early-biography details: quoted, not independently confirmed."},
+{q:"Top-3 share implies…",o:["Diversification","Infrastructure concentration","Irrelevance","Equal weights"],a:1,e:"NVDA+MSFT+GOOGL ≈ 83% — test with Herfindahl + event study."},
+{q:"Best ASR-robustness test?",o:["Ignore audio","Re-transcribe ± gazetteer, measure WER","Delete names","Trust once"],a:1,e:"H4: proper-noun error ~15% without a name list."},
+{q:"Honest use of P/E 354 (TSLA) / 155 (AMD)?",o:["Proves earnings","Prices future growth","Meaningless","Proves medals"],a:1,e:"Multiples encode expectations. Say what numbers prove and what they don't."}]};
+let level='starter',answers={};
+try{answers=JSON.parse(localStorage.getItem('medals-quiz')||'{}')}catch(e){answers={}}
+function total(){return Object.keys(answers).length}
+function score(){return Object.values(answers).filter(v=>v.ok).length}
+function render(){
+document.querySelectorAll('.levels button[data-level]').forEach(b=>b.classList.toggle('active',b.dataset.level===level));
+document.getElementById('score').textContent='Score: '+score()+' / 15 · Level: '+level[0].toUpperCase()+level.slice(1);
+document.getElementById('bar').style.width=(score()/15*100)+'%';
+const box=document.getElementById('questions');box.innerHTML='';
+BANK[level].forEach((it,qi)=>{
+const d=document.createElement('div');d.className='quiz-q';
+const key=level+qi;const st=answers[key];
+d.innerHTML='<b>Q'+(qi+1)+'. '+it.q+'</b>';
+it.o.forEach((opt,oi)=>{
+const b=document.createElement('button');b.textContent=opt;
+if(st){if(oi===it.a)b.classList.add('right');else if(st.pick===oi)b.classList.add('wrong');b.disabled=true;}
+b.onclick=()=>{const ok=(oi===it.a);answers[key]={ok,pick:oi};try{localStorage.setItem('medals-quiz',JSON.stringify(answers))}catch(e){}render();const ex=d.querySelector('.expl');if(ex)ex.style.display='block';};
+d.appendChild(b);});
+const ex=document.createElement('div');ex.className='expl';ex.textContent=(st?'✔ ':'')+it.e;if(!st)ex.style.display='none';d.appendChild(ex);box.appendChild(d);});}
+document.querySelectorAll('.levels button[data-level]').forEach(b=>b.onclick=()=>{level=b.dataset.level;render();document.getElementById('quiz').scrollIntoView({behavior:'smooth'})});
+document.getElementById('reset').onclick=()=>{answers={};try{localStorage.removeItem('medals-quiz')}catch(e){}render();};
+render();
+</script>
+</body>
+</html>
