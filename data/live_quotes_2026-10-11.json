@@ -1,0 +1,113 @@
+{
+  "snapshot_utc": "2026-10-11T15:54:42Z",
+  "source": "yfinance via agent-reach_stock_quote (no key, server-side)",
+  "quotes": {
+    "NVDA": {
+      "name": "NVIDIA Corporation",
+      "current": 229.28,
+      "open": 233.875,
+      "high": 233.89,
+      "low": 229.11,
+      "last_close": 230.48,
+      "chg": -1.2,
+      "percent": -0.520651,
+      "volume": 84307452,
+      "market_cap": 5536424132608,
+      "pe_ttm": 28.986094
+    },
+    "AMD": {
+      "name": "Advanced Micro Devices, Inc.",
+      "current": 608.1,
+      "open": 625.54,
+      "high": 626.5,
+      "low": 606.01,
+      "last_close": 620.68,
+      "chg": -12.58,
+      "percent": -2.02681,
+      "volume": 13664055,
+      "market_cap": 992708001792,
+      "pe_ttm": 155.12755
+    },
+    "TSLA": {
+      "name": "Tesla, Inc.",
+      "current": 382.7,
+      "open": 382.38,
+      "high": 388.56,
+      "low": 379.71,
+      "last_close": 375.0,
+      "chg": 7.70001,
+      "percent": 2.05334,
+      "volume": 38834397,
+      "market_cap": 1511491895296,
+      "pe_ttm": 354.35184
+    },
+    "MSFT": {
+      "name": "Microsoft Corporation",
+      "current": 535.07,
+      "open": 528.235,
+      "high": 537.195,
+      "low": 526.2401,
+      "last_close": 522.61,
+      "chg": 12.46,
+      "percent": 2.38419,
+      "volume": 17890995,
+      "market_cap": 3973186846720,
+      "pe_ttm": 29.111536
+    },
+    "GOOGL": {
+      "name": "Alphabet Inc.",
+      "current": 351.66,
+      "open": 351.45,
+      "high": 354.7,
+      "low": 350.31,
+      "last_close": 348.29,
+      "chg": 3.37,
+      "percent": 0.967583,
+      "volume": 17231359,
+      "market_cap": 4300779028480,
+      "pe_ttm": 17.644756
+    },
+    "DELL": {
+      "name": "Dell Technologies Inc.",
+      "current": 586.06,
+      "open": 581.65,
+      "high": 595.06,
+      "low": 566.2,
+      "last_close": 574.55,
+      "chg": 11.51,
+      "percent": 2.00331,
+      "volume": 5273949,
+      "market_cap": 372624424960,
+      "pe_ttm": 34.073254
+    }
+  },
+  "derived": {
+    "combined_market_cap": 16687214329856,
+    "combined_market_cap_trillions": 16.687214329856,
+    "note": "Sum of six tickers above. NVDA+MSFT+GOOGL dominate (>80%). Computed, not fetched."
+  },
+  "nvidia_fundamentals_sec_10k": {
+    "source": "SEC EDGAR via openresearch_get_company_financials, USD",
+    "revenue": {
+      "2022": 26914000000,
+      "2021": 16675000000,
+      "2020": 3105000000,
+      "2019": 3014000000,
+      "2018": 3181000000
+    },
+    "net_income": {
+      "2026": 120067000000,
+      "2025": 72880000000,
+      "2024": 29760000000,
+      "2023": 4368000000,
+      "2022": 9752000000
+    },
+    "total_assets": {
+      "2026": 206803000000,
+      "2025": 111601000000,
+      "2024": 65728000000,
+      "2023": 41182000000,
+      "2022": 44187000000
+    }
+  }
+}

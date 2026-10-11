@@ -1,0 +1,60 @@
+{
+  "source": "yfinance",
+  "rows": [
+    {
+      "ticker": "NVDA",
+      "snapshot_price": 229.28,
+      "snapshot_mcap": 5536424132608,
+      "live": {
+        "last_price": 229.27999877929688,
+        "market_cap": 5536424130523
+      }
+    },
+    {
+      "ticker": "AMD",
+      "snapshot_price": 608.1,
+      "snapshot_mcap": 992708001792,
+      "live": {
+        "last_price": 608.0999755859375,
+        "market_cap": 992708033184
+      }
+    },
+    {
+      "ticker": "TSLA",
+      "snapshot_price": 382.7,
+      "snapshot_mcap": 1511491895296,
+      "live": {
+        "last_price": 382.70001220703125,
+        "market_cap": 1511491835896
+      }
+    },
+    {
+      "ticker": "MSFT",
+      "snapshot_price": 535.07,
+      "snapshot_mcap": 3973186846720,
+      "live": {
+        "last_price": 535.0700073242188,
+        "market_cap": 3973186680255
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "snapshot_price": 351.66,
+      "snapshot_mcap": 4300779028480,
+      "live": {
+        "last_price": 351.6600036621094,
+        "market_cap": 4300778927456
+      }
+    },
+    {
+      "ticker": "DELL",
+      "snapshot_price": 586.06,
+      "snapshot_mcap": 372624424960,
+      "live": {
+        "last_price": 586.0599975585938,
+        "market_cap": 372624418712
+      }
+    }
+  ],
+  "combined_T": 16.687214329856
+}

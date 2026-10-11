@@ -1,0 +1,48 @@
+{
+  "anchor_utc": "2026-10-11T15:54:42Z",
+  "method": "Sequential one-at-a-time search, no parallel websearch (429 avoidance), DuckDuckGo-lite fallback documented",
+  "event_sources": [
+    "https://www.whitehouse.gov/releases/2026/10/president-trump-presents-national-medals-of-science-and-national-medals-of-technology-and-innovation/",
+    "https://www.nbcnews.com/tech/tech-news/trump-awards-musk-tech-titans-national-medals-science-rcna602104",
+    "https://www.aljazeera.com/news/2026/10/8/trump-gives-top-us-science-awards-to-elon-musk-and-other-tech-executives",
+    "https://www.cnbc.com/2026/10/07/trump-awarding-medals-to-musk-dell-nadella-at-science-summit.html",
+    "https://www.space.com/space-exploration/trump-awards-spacex-founder-elon-musk-national-medal-of-science",
+    "https://www.forbes.com/sites/antoniopequenoiv/2026/10/08/trump-awards-modern-day-thomas-edison-elon-musk-national-medal-of-science-culminating-reconciliation-photos/"
+  ],
+  "crew12": [
+    "https://www.nasa.gov/blogs/spacestation/2026/10/08/nasas-spacex-crew-12-dragon-splashes-down-at-1134-a-m-edt/",
+    "https://www.npr.org/2026/10/08/nx-s1-5992845/nasa-spacex-crew-12-international-space-station-iss-splashdown"
+  ],
+  "genesis": [
+    "https://genesis.energy.gov/",
+    "https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission"
+  ],
+  "john_trump": [
+    "https://en.wikipedia.org/wiki/John_G._Trump",
+    "https://physicstoday.aip.org/news/a-profile-of-john-trump-donalds-oft-mentioned-scientist-uncle"
+  ],
+  "pagerank": [
+    "openalex: Liu&Yu 2009, Gleich 2015, WWW7 1998"
+  ],
+  "cuda": [
+    "lexfridman.com/jensen-huang-transcript (Fridman #494 2026-03-23)",
+    "nvidia GTC/COMPUTEX transcripts"
+  ],
+  "su": [
+    "google_scholar: Devadiga&Aithal 2026 Zen chiplet Xilinx",
+    "John&Narayanan 2021"
+  ],
+  "reproducibility": [
+    "pytorch docs randomness/cuda via gitmcp",
+    "PlaceIT 2025 arxiv:2502.01449",
+    "Slingshot 2020"
+  ],
+  "market": "data/live_quotes_2026-10-11.json + benchmarks/market_benchmark.json (live re-fetch 2026-10-11 matches snapshot)",
+  "nulls_logged": [
+    "duckduckgo_search blocked (TLS fingerprint)",
+    "hacker_news null",
+    "kaggle datasets_list param error",
+    "Darren Bey unresolved",
+    "Starlink hurricane + Dell 6.25B + Brin age-19 details UNVERIFIED"
+  ]
+}
